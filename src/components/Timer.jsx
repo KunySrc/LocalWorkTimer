@@ -86,13 +86,14 @@ export default function PomodoroTimer() {
           textAnchor="middle"
           fontSize="28"
           fontWeight="bold"
+          fill="white"
         >
           {formatTime()}
         </text>
       </svg>
 
-      <div style={{ marginTop: "20px" }}>
-        <button onClick={() => setIsRunning(true)}>▶️</button>
+      <div>
+        <button className="startBtn" onClick={() => setIsRunning(true)}>▶️</button>
       </div>
 
       {/* Audio Element */}
