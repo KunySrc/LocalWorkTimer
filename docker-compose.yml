@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  pomodoro-app:
+    build:
+      context: https://github.com/KunySrc/LocalWorkTimer.git
+      dockerfile: Dockerfile
+    image: pomodoro-app:latest
+    ports:
+      - "2552:80"
+    restart: always
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge
