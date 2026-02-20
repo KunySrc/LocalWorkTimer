@@ -1,0 +1,16 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+}/*# sourceMappingURL=main.css.map */
